@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <title>LOGOUT</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Basic Login Page</h1>
+    </header>
+    <div class="details"> 
+        <p id="user"></p>   
+    <div class="row">
+        <div class="col-label">
+        </div>
+        <div class="col-input">
+            <button id = "btn" onclick="link()">LOGOUT</button>
+        </div>
+     </div>
+     </div>
+     <script>
+        var x = setTimeout(link,2000);
+        function link(){
+            window.location='///C:/Users/Neelamma%20Patil/Documents/assignment/login.html'
+        }
+        function yy(){
+            clearTimeout(x);
+            x= setTimeout(link,2000);
+        }
+        document.addEventListener("click",yy)
+        document.addEventListener("mousemove",yy)
+        document.addEventListener("keydown",yy)
+        document.addEventListener("keydown",yy)
+        document.addEventListener("keypress",yy)
+        //function read(){
+            var e = sessionStorage.getItem("userID");
+            document.getElementById("user").innerHTML = e;
+        //}
+        function a(){
+            
+        }
+    </script>
+</body>
+</html>
